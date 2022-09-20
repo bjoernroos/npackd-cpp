@@ -41,6 +41,7 @@ deploy:
     secure: TZRXNYgUHwdfwkAfUimkaegIlCs5+UrAKl484ZCxAgvT5TmqA8TKd9nadxXHXDA0
   draft: true
   on:
+    TAG_BRANCH: master
     appveyor_repo_tag: true
 after_build:
 - ps: |
