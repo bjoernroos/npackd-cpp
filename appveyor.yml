@@ -39,6 +39,7 @@ deploy:
   auth_token:
     secure: TZRXNYgUHwdfwkAfUimkaegIlCs5+UrAKl484ZCxAgvT5TmqA8TKd9nadxXHXDA0
   draft: true
+  tag: $(APPVEYOR_REPO_TAG_NAME)
   on:
     appveyor_repo_tag: true
 after_build:
