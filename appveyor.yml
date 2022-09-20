@@ -34,12 +34,12 @@ build_script:
 test_script:
 - cmd.exe /C AppVeyorTest.bat
 deploy:
+  tag: $(APPVEYOR_REPO_TAG_NAME)
   description: 'Automated release'
   provider: GitHub
   auth_token:
     secure: TZRXNYgUHwdfwkAfUimkaegIlCs5+UrAKl484ZCxAgvT5TmqA8TKd9nadxXHXDA0
   draft: true
-  tag: $(APPVEYOR_REPO_TAG_NAME)
   on:
     appveyor_repo_tag: true
 after_build:
