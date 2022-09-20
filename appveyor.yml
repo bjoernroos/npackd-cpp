@@ -35,6 +35,7 @@ test_script:
 - cmd.exe /C AppVeyorTest.bat
 deploy:
   description: 'Automated release'
+  force_update: true
   provider: GitHub
   auth_token:
     secure: TZRXNYgUHwdfwkAfUimkaegIlCs5+UrAKl484ZCxAgvT5TmqA8TKd9nadxXHXDA0
